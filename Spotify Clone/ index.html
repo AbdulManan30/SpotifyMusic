@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="/CSS/utility.css" />
+  </head>
+  <body>
+    <div class="container flex bg_black">
+      <div class="left">
+        <div class="home bg_gery rounded m_1 p_2">
+          <div class="logo">
+            <img width="90px" class="invert" src="/imgs/logo.svg" alt="Logo" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              color="#ffffff"
+              fill="none"
+            >
+              <path
+                d="M19.0005 4.99988L5.00045 18.9999M5.00045 4.99988L19.0005 18.9999"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <ul>
+            <li class="home_search_li">
+              <img class="invert" src="/imgs/home.svg" alt="Home" />Home
+            </li>
+            <li class="home_search_li">
+              <img class="invert" src="/imgs/search.svg" alt="Search" />Search
+            </li>
+          </ul>
+        </div>
+        <div class="library bg_gery rounded m_1 p_2">
+          <div class="heading">
+            <div class="yourLibrary">
+              <img class="invert" src="/imgs/playlist.svg" alt="Playlists" />
+              <h4>Your Library</h4>
+            </div>
+          </div>
+          <div class="songList">
+            <ul></ul>
+          </div>
+
+          <div class="footer">
+            <div>
+              <a href="https://www.spotify.com/pk-en/legal/"
+                ><span>Legal</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/pk-en/safetyandprivacy/"
+                ><span>Safety &amp; Privacy Center</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/pk-en/legal/privacy-policy/"
+                ><span>Privacy Policy</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/pk-en/legal/cookies-policy/"
+                ><span>Cookies</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/pk-en/legal/privacy-policy/#s3"
+                ><span>About Ads</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/pk-en/accessibility/"
+                ><span>Accessibility</span></a
+              >
+            </div>
+            <button class="language_btn invert">
+              <img src="/imgs/globle.svg" alt="Global" />English
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="right home bg_gery rounded m_1">
+        <div class="header rounded">
+          <div class="nav">
+            <div class="svges">
+              <img id="menu_burger" src="/imgs/menu.svg" alt="Menu" />
+              <div class="left_Arrow_div arrow">
+                <img class="invert" src="/imgs/leftArrow.svg" alt="letf Arrow" />
+              </div>
+              <div class="right_Arrow_div arrow">
+                <img class="invert" src="/imgs/rightArrow.svg" alt="Right Arrow" />
+              </div>
+            </div>
+            <div class="buttons">
+              <button>Sign up</button>
+              <button class="login_btn">Login</button>
+            </div>
+          </div>
+        </div>
+        <div class="spotify_playList p_2">
+          <div class="headings">
+            <h2>Spotify Playlists</h2>
+            <p>Show all</p>
+          </div>
+          <div  class="cardContainer ">
+
+          </div>
+        </div>
+        <div id="clickHidden" class="rotate_toggle">
+          <img id="clickHiddenImg" src="/imgs/top.svg" alt="svg" />
+        </div>
+        <div class="playBar height_remove">
+          <div class="songInfo"></div>
+          <div class="songButtons">
+            <img id="previous" src="/imgs/prevSong.svg" alt="Previous" />
+            <img id="playIcon" src="/imgs/play.svg" alt="Play" />
+            <img id="next" src="/imgs/nextSong.svg" alt="Next" />
+          </div>
+          <div class="songTimeOrVolume">
+            <div class="songTime"></div>
+            <div class="range">
+              <img src="/imgs/volume.svg" alt="volume" />
+              <input style="accent-color: #1fdf65da" type="range"/ value="80">
+              <span id="volumeText">80 / 100</span>
+            </div>
+          </div>
+        </div>
+        <div class="seekBar">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+    <script src="JS/script.js"></script>
+  </body>
+</html>

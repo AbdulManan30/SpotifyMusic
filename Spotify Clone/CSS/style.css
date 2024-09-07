@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.left {
+    width: 25vw;
+    margin-left: 5px;
+    position: relative;
+    height: 100vh;
+    padding-bottom: 190px;
+}
+
+.right {
+    width: 75vw;
+    position: relative;
+}
+
+.left .home ul .home_search_li {
+    display: flex;
+    align-items: center;
+}
+
+.left .home {
+    position: relative;
+}
+
+.left .home ul li {
+    width: 25px;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding-top: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.left .home .logo {
+    display: flex;
+    align-items: center;
+}
+
+.left .home .logo img {
+    cursor: pointer;
+}
+
+.left .home .logo svg {
+    position: absolute;
+    right: 10px;
+    display: none;
+}
+
+.left .heading {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.left .heading .yourLibrary {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.left .heading img {
+    width: 25px;
+}
+
+.left .library {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.left .library h4 {
+    cursor: alias;
+}
+
+.footer {
+    display: flex;
+    gap: 15px;
+    line-height: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer a {
+    font-size: 11px;
+    color: rgb(161, 161, 161);
+    text-decoration: none;
+}
+
+.language_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding: 5px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all ease-out 0.2s;
+    width: 100px;
+}
+
+.language_btn:hover {
+    transform: scale(105%);
+}
+
+.language_btn img {
+    width: 20px;
+}
+
+.right .header .svges {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.right .svges #menu_burger {
+    cursor: pointer;
+    display: none;
+}
+
+.right .header .svges .right_Arrow_div img,
+.right .header .svges .left_Arrow_div img {
+    width: 15px;
+    object-fit: cover;
+}
+
+.right .header .svges .arrow {
+    height: 35px;
+    width: 35px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all ease-out 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right .header .svges .arrow:hover {
+    transform: scale(110%);
+}
+
+.right .header {
+    padding: 10px;
+    background: #1a1a1a64;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.right .header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.right .header .nav button {
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all ease-out 0.2s;
+}
+
+.right .header .nav button:hover {
+    transform: scale(110%);
+}
+
+.right .header .nav .buttons :nth-child(2) {
+    background-color: white;
+    color: black;
+}
+
+
+.right .spotify_playList {
+    margin-top: 8px;
+}
+
+.right .spotify_playList .headings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right .spotify_playList .headings p {
+    color: grey;
+    border: 1.5px solid transparent;
+    font-size: 14px;
+    transition: all ease-out 0.2s;
+    cursor: pointer;
+}
+
+.right .spotify_playList .headings h2 {
+    border: 1.5px solid transparent;
+    transition: all ease-out 0.2s;
+    cursor: pointer;
+}
+
+.right .spotify_playList .headings h2:hover {
+    border-bottom: 1.5px solid rgb(255, 255, 255);
+}
+
+.right .spotify_playList .headings p:hover,
+.right .spotify_playList .headings h2:hover {
+    border-bottom: 1.5px solid grey;
+}
+
+.right .spotify_playList .cardContainer {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-height: 70vh;
+    overflow-y: scroll;
+    padding-bottom: 20px;
+}
+.right .spotify_playList .cardContainer .card {
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #171717;
+}
+
+.right .spotify_playList .cardContainer .card:hover {
+    background-color: #202020;
+}
+
+.right .spotify_playList .cardContainer .card .card_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.right .spotify_playList .cardContainer .card .card_img img {
+    object-fit: contain;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.right .spotify_playList .cardContainer .card p {
+    color: #9F9F9F;
+    font-size: 14px;
+    line-height: 20px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.right .spotify_playList .cardContainer .card .card_img .playBtn {
+    position: absolute;
+    right: 5px;
+    bottom: -56px;
+    transition: all ease-out 0.2s;
+}
+
+.right .spotify_playList .cardContainer .card:hover .card_img .playBtn {
+    bottom: 5px;
+}
+
+.right .spotify_playList .cardContainer .card .card_img .playBtn img {
+    width: 50px;
+    border-radius: 50%;
+    padding: 13px;
+    background-color: #1FDF64;
+}
+
+.right .spotify_playList .cardContainer .card h4 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 10px;
+}
+
+.right .playBar {
+    position: absolute;
+    bottom: 0px;
+    width: 97%;
+    background-color: #e3e3e3e3;
+    height: 0;
+    padding: 0;
+    border-radius: 7px;
+    filter: invert(1);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    left: 50%;
+    transform: translate(-50%);
+    gap: 10px;
+    bottom: 35px !important;
+    transition: all ease-out 0.2s;
+    overflow: hidden !important;
+    opacity: 0;
+}
+
+.height_remove {
+    padding: 30px !important;
+    height: fit-content !important;
+    opacity: 1 !important;
+}
+
+.right .playBar .songButtons {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.songList {
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.songList ul {
+    width: 100%;
+    padding: 5px;
+}
+
+.songList ul li {
+    list-style-type: decimal;
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+    padding: 10px 0px;
+    border: 1.5px solid #5656569e;
+    padding: 10px 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+}
+
+.songList ul li .musicNameAndIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.songList ul li .musicNameAndIcons .songNamePara {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+
+.songList ul li .musicNameAndIcons .singer {
+    font-size: 12px;
+    color: rgba(230, 230, 230, 0.719);
+}
+
+.songList ul li .playSong {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+    width: 150px;
+}
+
+.songList ul li img {
+    width: 25px;
+    filter: invert(1);
+}
+
+.playBar .songButtons img {
+    cursor: pointer;
+}
+
+.seekBar {
+    height: 8px;
+    width: 95%;
+    background: #898989;
+    position: absolute;
+    bottom: 8px;
+    cursor: pointer;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 45px !important;
+    border-radius: 7px;
+}
+
+.seekBar .circle {
+    border-radius: 50%;
+    background-color: white;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    bottom: -4px;
+    left: -2px;
+    transition: left ease-out 0.1s;
+}
+
+.playBar #playIcon {
+    transition: all ease-out 0.2s;
+}
+
+.playBar .songInfo {
+    width: 300px;
+    display: block;
+    display: -webkit-box;
+    max-height: 3em;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.playBar .songTimeOrVolume {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 8px;
+}
+
+.playBar .songTimeOrVolume .range {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.playBar .songTimeOrVolume .range img {
+    cursor: pointer;
+}
+
+.playBar .songTimeOrVolume .range input {
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    filter: invert();
+    cursor: pointer;
+    height: 5px;
+}
+
+.right #clickHidden {
+    position: absolute;
+    right: 80px;
+    background: #121212;
+    z-index: 10;
+    height: 26px;
+    width: 60px;
+    bottom:70px;
+    transform: rotate(180deg);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transition: all ease-out 0.2s;
+}
+
+.right #clickHidden img {
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    left: 10px;
+    bottom: 0px;
+    cursor: pointer;
+    transition: all ease-out 0.2s;
+}
+
+.rotate_toggle {
+    bottom: 130px !important;
+    transform: rotate(0deg) !important;
+}
+.songList ul li .playSong span {
+    display: none;
+}
+@media (max-width: 1500px) {
+    .left {
+        width: 500px;
+        padding: 0px 3px;
+        border-radius: 7px;
+        overflow-y: auto;
+    }
+
+    .left .library {
+        justify-content: start;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .left {
+        position: absolute;
+        z-index: 1;
+        left: -100%;
+        transition: all ease-out 0.3s;
+        background: #000;
+        margin-left: 0;
+        overflow-x: hidden;
+    }
+
+    .right {
+        width: 100vw;
+        height: 100vh;
+        margin: 0 !important;
+        transition: all ease-out 0.3s;
+        position: relative;
+    }
+
+    .right .svges #menu_burger {
+        display: block;
+    }
+
+    .left .home .logo svg {
+        display: block;
+    }
+
+    .right .playBar {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .playBar .songTimeOrVolume {
+        align-items: center;
+    }
+
+    .playBar .songInfo {
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .playBar .songButtons {
+        width: 150px;
+    }
+
+    .playBar .songButtons img {
+        width: 30px;
+    }
+
+    .playBar .songTime {
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    .height_remove {
+        height: 250px !important;
+    }
+    .rotate_toggle {
+        bottom: 269px !important;
+    }
+    .right #clickHidden {
+        right: 35px;
+    }
+}
+
+@media (max-width: 500px) {
+    .left {
+        width: 100%;
+    }
+
+    .songList ul li {
+        font-size: 13px !important;
+        gap: 0;
+    }
+
+    .songList ul li .playSong {
+        width: 120px;
+    }
+
+    .right .cardContainer {
+        justify-content: center;
+        max-height: 75vh;
+    }
+
+    .right .header .svges .arrow {
+        display: none;
+    }
+
+    .right .header .nav button {
+        padding: 10px 20px;
+        font-size: 13px !important;
+    }
+    .right .spotify_playList .cardContainer .card {
+        width: 100%;
+    }
+
+    .right .spotify_playList .headings h2 {
+        font-size: 20px;
+    }
+
+    .playBar .songTimeOrVolume .range #volumeText {
+        font-size: 11px;
+    }
+    .right #clickHidden {
+        right: 20px;
+    }
+}
